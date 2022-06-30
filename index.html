@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Component Library | Manish Gupta </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Component Library</h1>
-    <p><strong>Manish Gupta</strong>is attending neog.camp and is currently completing levelZero one weekend and assignment at a time.</p>
+    <p><strong>Manish Gupta </strong> is attending neog.camp and is currently completing levelZero one weekend and assignment at a time.</p>
     <p> This is a component library created my me to better design each element</p>
     <p>After creating this library I am going to use the components in my <strong> portfolio, blog and all projects </strong> created. This will ensure that all my projects have <strong> consistent themeing and styling</strong></p>
     <hr>
@@ -23,23 +24,23 @@
    <h2>@containers</h2>
 
    <h3>@fluid container</h3>
-   <p>This is going to be a fluid container. It will go full width of page. With some margin.</p>
+   <p class="container-fluid">This is going to be a fluid container. It will go full width of page. With some margin.</p>
 
-   <h3>@center container</h3>
-   <p>This is going to be a center container. It will go till a given width and center content.</p>
-   <hr>
+   <h3 >@center container</h3>
+   <p class="container container-center">This is going to be a center container. It will go till a given width and center content.</p>
+   <hr> 
 
    <h2>@links</h2>
-   <a href="/">Primary Link</a>
-   <a href="/"> Secondary Link</a>
+   <a class="primary-link link" href="/">Primary Link</a>
+   <a class="secondary-link link" href="/"> Secondary Link</a>
    <hr>
 
    <h2>@lists</h2>
 
    <h3>unordered lists</h3>
-   <p>We don't want to show bullets in the unordered list. We'll remove that with CSS.</p>
+   <p >We don't want to show bullets in the unordered list. We'll remove that with CSS.</p>
 
-   <ul>
+   <ul class="list-non-bullet">
     <li>item one</li>
     <li>item two</li>
     <li>item three</li>
@@ -49,10 +50,10 @@
    <h2>inline lists</h2>
    <p>Instead of going in a new row, we will create a list which will take columns.</p>
 
-   <ul>
-    <li>item one</li>
-    <li>item two</li>
-    <li>item three</li>
+   <ul  class="list-non-bullet ">
+    <li class="list-inline">item one</li>
+    <li class="list-inline">item two</li>
+    <li class="list-inline">item three</li>
    </ul>
 
    <h2>reverse ordered lists</h2>
@@ -65,27 +66,47 @@
    </ol>
 
    <h2>@nav</h2>
-   <p>Navigation is used on the top of the page and used to get to different pages</p>
-   <p>theBrandName</p>
 
-   <ul>
-    <li><a href="/">home</a> </li>
-    <li><a href="/">products</a> </li>
-    <li><a href="/">about</a> </li>
+   <nav class="navigation container">
+   <p>Navigation is used on the top of the page and used to get to different pages</p>
+   <p class="nav-brand">theBrandName</p>
+
+   <ul class="list-non-bullet nav-pills">
+    <li class="list-inline"><a class="link link-active" href="/">home</a> </li>
+    <li class="list-inline"><a class="link" href="/">products</a> </li>
+    <li class="list-inline"><a class="link" href="/">about</a> </li>
    </ul>
+</nav>
    <hr>
 
-   <h2>header</h2>
-   <img src="./images/hero.svg" alt="hero-images">
-   <h1>this is heading h1 inside header</h1>
+   <h2 >header</h2>
+   <header class="hero">
+   <img class="hero-img" src="./images/hero.svg" alt="hero-images">
+   <h1 class="hero-heading">manish gupta <span class="heading-inverted">the web developer</span> </h1>
+</header>
    <hr>
 
    <h2>@section</h2>
-   <p>A section is used to separate parts of pages. In marketing websites you would have seen a header followed by sections of features, team, pricing, contact info etc.
+   <section class="section">
+    <div class="container container-center">
+        <h1>white section</h1>
+        <p>This will Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, voluptas odio facere quia maiores corrupti provident sed dolorem eum, beatae fugiat eos placeat vitae culpa nostrum, natus atque. Itaque cumque possimus placeat dolores, facere aspernatur quod amet dolor quas quo? have white background</p>
+    </div>
+    
+   </section>
+   <!-- <p>A section is used to separate parts of pages. In marketing websites you would have seen a header followed by sections of features, team, pricing, contact info etc. -->
 
-</p>
+<!-- </p> -->
+    <section class="section ow">
+        <div class="container container-center">
+            <h1>off white section</h1>
+            <p>This will Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam molestiae, dolorem mollitia eaque necessitatibus possimus nulla esse maxime saepe illum? Quod autem veniam perferendis minus, eveniet adipisci neque in ad! have grey background</p>
+        </div>
 
-    <h3>@normal section</h3>
+
+    </section>
+
+    <!-- <h3>@normal section</h3>
     <h2>heading inside section</h2>
     <p>Text defining this section and many more things</p>
     <a href="/">Primary Button</a>
@@ -93,17 +114,21 @@
     <h3>@an off white section</h3>
     <h2>inside off white section</h2>
     <p>Text defining this section and many more things</p>
-    <a href="/">Primary Button</a>
+    <a href="/">Primary Button</a> -->
     <hr>
 
     <h2>@footer</h2>
-    <p>header inside footer</p>
-
-    <ul>
-        <li>socialone</li>
-        <li>socialtwo</li>
-        <li>socialthree</li>
+    <footer class="footer">
+        <div class="footer-heading">heading inside footer</div>
+        
+    <ul class="social-links list-non-bullet">
+        <li class="list-inline"> <a class="link" href="/">socialone</a> </li>
+        <li  class="list-inline"><a class="link"href="/">socialone</a></li>
+        <li  class="list-inline"><a class="link" href="/">socialone</a></li>
     </ul>
+    </footer>
+
+
 
 
 
